@@ -4,10 +4,12 @@ menu:
   Archives: /archives
 rss: /atom.xml
 github: https://github.com/howiefh
+# banner: "images/banner.jpg"
 
 # Content
 excerpt_link: Read More
 fancybox: true
+recent_posts_limits: 5
 
 # Sidebar
 sidebar: right
@@ -37,7 +39,6 @@ baidu_tongji:
 favicon: /favicon.ico
 
 twitter:
-google_plus:
 fb_admins:
 fb_app_id:
 
@@ -73,3 +74,16 @@ busuanzi: true
 # calendar
 calendar:
   language: zh-CN
+# valine comment system. https://valine.js.org
+
+valine:
+  enable: false # if you want use valine,please set this value is true
+  appId:  # leancloud application app id
+  appKey:  # leancloud application app key
+  notify: false # valine mail notify (true/false) https://github.com/xCss/Valine/wiki
+  verify: false # valine verify code (true/false)
+  pageSize: 10 # comment list page size
+  avatar: mm # gravatar style https://valine.js.org/#/avatar
+  lang: zh-cn # i18n: zh-cn/en
+  placeholder: Just go go # valine comment input placeholder(like: Please leave your footprints )
+  guest_info: nick,mail,link #valine comment header info

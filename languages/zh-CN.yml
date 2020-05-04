@@ -10,7 +10,7 @@ archive: 归档
 archive_a: 归档
 archive_b: 归档：%s
 page: 第 %d 页
-recent_posts: 近期文章
+recent_posts: 最新文章
 menu: 菜单
 links: 友情链接
 rss: "RSS 订阅"
@@ -21,10 +21,10 @@ tweets: 推文
 calendar: 日历
 about_me: 关于我
 recent_comments: 最新评论
-newer: Newer
-older: Older
-share: Share
+newer: 前一篇
+older: 后一篇
+share: 分享
 powered_by: Powered by
-rss_feed: RSS Feed
-category: Category
-tag: Tag
+rss_feed: RSS 订阅
+category: 目录
+tag: 标签

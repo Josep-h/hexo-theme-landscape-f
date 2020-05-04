@@ -14,7 +14,7 @@ $ cd <your blog path>
 $ git clone https://github.com/howiefh/hexo-theme-landscape-f.git themes/landscape-f
 ```
 
-**Landscape requires Hexo 2.4 and above.** If you would like to enable the RSS, the [hexo-generate-feed] plugin is also required.
+**Landscape requires Hexo 2.4 and above.** If you would like to enable the RSS, the [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed) plugin is also required.
 
 ### Enable
 
@@ -22,6 +22,12 @@ Modify `theme` setting in `_config.yml` to `landscape-f`.
 
 ```
 theme: landscape-f
+```
+
+``` diff
+_config.yml
+- theme: some-theme
++ theme: landscape
 ```
 
 ### Update
@@ -40,10 +46,12 @@ menu:
   Archives: /archives
 rss: /atom.xml
 github: https://github.com/howiefh
+banner: images/banner.jpg
 
 # Content
 excerpt_link: Read More
 fancybox: true
+recent_posts_limits: 5
 
 # Sidebar
 sidebar: right
@@ -116,8 +124,10 @@ calendar:
 - **menu** - Navigation menu
 - **rss** - RSS link
 - **github** - Github link
+- **banner** - Path of title banner image of page top
 - **excerpt_link** - "Read More" link at the bottom of excerpted articles. `false` to hide the link.
 - **fancybox** - Enable [Fancybox]
+- **recent_posts_limits** - How many posts display in Home page.
 - **sidebar** - Sidebar style. You can choose `left`, `right`, `bottom` or `false`.
 - **widgets** - Widgets displaying in sidebar
 - **google_analytics** - Google Analytics ID
@@ -164,26 +174,4 @@ Landscape-F provides 8 built-in widgets:
 
 All of them are enabled by default. You can edit them in `widget` setting.
 
-## Development
-
-### Requirements
-
-- [Grunt] 0.4+
-- Hexo 2.4+
-
-### Grunt tasks
-
-- **default** - Download [Fancybox] and [Font Awesome].
-- **fontawesome** - Only download [Font Awesome].
-- **fancybox** - Only download [Fancybox].
-- **clean** - Clean temporarily files and downloaded files.
-
-[Hexo]: https://hexo.io/
-[Fancybox]: http://fancyapps.com/fancybox/
-[Font Awesome]: http://fontawesome.io/
-[Grunt]: http://gruntjs.com/
-[hexo-generate-feed]: https://github.com/hexojs/hexo-generator-feed
-[Landscape]: https://github.com/hexojs/hexo-theme-landscape
-[hexo-generator-calendar]: https://github.com/howiefh/hexo-generator-calendar
-[languages.js]:https://github.com/howiefh/hexo-theme-landscape-f/blob/master/source/js/languages.js
-[calendar.js]:https://github.com/howiefh/hexo-theme-landscape-f/blob/master/source/js/calendar.js
+[Fancybox]: https://github.com/fancyapps/fancyBox
