@@ -74,8 +74,8 @@ busuanzi: true
 # calendar
 calendar:
   language: zh-CN
-# valine comment system. https://valine.js.org
 
+# valine comment system. https://valine.js.org
 valine:
   enable: false # if you want use valine,please set this value is true
   appId:  # leancloud application app id

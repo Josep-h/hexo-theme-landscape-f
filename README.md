@@ -27,7 +27,7 @@ theme: landscape-f
 ``` diff
 _config.yml
 - theme: some-theme
-+ theme: landscape
++ theme: landscape-f
 ```
 
 ### Update
@@ -112,13 +112,14 @@ calendar:
     dayOfWeek: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
     postsMonthTip: 'Posts published in LMM yyyy'
     titleFormat: 'yyyy LMM'
-    titleLinkFormat: '/archives/yyyy/MM/'
+    titleLinkFormat: 'archives/yyyy/MM/'
     headArrows: {previous: '<span class="cal-prev"></span>', next: '<span class="cal-next"></span>'}
     footArrows: {previous: ' ', next: ' '}
     weekOffset: 0
-    single: false
-    root: '/calendar/'
-    url: '/calendar.json'
+    root: '/'
+    calendarSingle: false
+    calendarRoot: 'calendar/'
+    calendarUrl: 'calendar.json'
 ```
 
 - **menu** - Navigation menu
@@ -143,7 +144,7 @@ calendar:
 - **busuanzi** - Display PV and UV
 - **calendar** - Options of calendar widget
     - language - See [languages.js]. Priority: theme's `_config.yml` `>` hexo's `_config.yml` `>` [calendar.js]'s default option.
-    - options - Priority of months, dayOfWeekShort, dayOfWeek, ostsMonthTip and titleFormat : theme's `_config.yml` `>` [languages.js] `>` [calendar.js]'s default option. Priority of single and root: hexo's `_config.yml` `>` theme's `_config.yml` `>` [calendar.js]'s default option. Priority of other options: theme's `_config.yml` `>` [calendar.js]'s default option.
+    - options - Priority of months, dayOfWeekShort, dayOfWeek, ostsMonthTip and titleFormat : theme's `_config.yml` `>` [languages.js] `>` [calendar.js]'s default option. Priority of calendarSingle and calendarRoot: hexo's `_config.yml` `>` theme's `_config.yml` `>` [calendar.js]'s default option. Priority of other options: theme's `_config.yml` `>` [calendar.js]'s default option.
 
 ## Features
 
